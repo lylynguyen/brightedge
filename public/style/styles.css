@@ -89,7 +89,7 @@ h4 {
 
 #top_content_text{
   text-align: center;
-  font-size: 23px;
+  font-size: 16px;
   font-weight: strong;
   width: 100%;
   padding-top: 20px;
@@ -109,17 +109,16 @@ h4 {
 #demo_button {
   width: 100%;
   text-align: center;
-  margin: 80px 10px 0 0;
+  margin: 70px 10px 0 0;
 }
 
 #manifesto {
   width: 100%;
-  height: 180px;
+  height: 200px;
   margin: 20px 0 20px 0;
   padding: auto;
   padding-top: 20px;
   border-top: 2px solid #DCDCDC;
-  border-bottom: 2px solid #DCDCDC;
 }
 
 #bottom_header_text {
