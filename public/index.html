@@ -13,14 +13,14 @@
     </script>
     <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <!-- <script type="text/javascript" src="public/main.js"></script> -->
+
   </head>
   <body>
   <div data-role="page" id="content">
     <div data-role="header" id="header">
       <img src="img/header.svg">
     </div>
-    <div id="wrapper">
+    <div data-role="main" id="wrapper">
       <div id="left"><p><!-- left --></p>
       </div>
       <div id="main">
@@ -30,13 +30,53 @@
         <div id="left_content">
           <h4>Top 20 Recent BrightEdge SEO Innovations</h4>
           <p id="intro">At BrightEdge our top value is customer success, and we have developed tremendous innovations to help you stay ahead of the changes in search and content marketing. As a SaaS company, our software is delivered as subscription and each month we bring you innovative new technologies at no additional cost.</p>
-          <p id="intro">Please check out our latest Infographic that highlights the Top 20 BrightEdge Innovations from the past 12 mons - all these great features are available in your account today!<a href="flyer.pdf">[Download a copy in PDF]</a></p>
-
+          <p id="intro">Please check out our latest Infographic that highlights the Top 20 BrightEdge Innovations from the past 12 mons - all these great features are available in your account today!<a data-ajax="false" href="flyer.pdf">[Download a copy in PDF]</a></p>
           <img src="img/info.svg">
         </div>
-        <div id="right_content">
-          <div id="demo">top</div>
-          <div id="manifesto">bottom</div>
+
+        <div data-role="content" id="right_content">
+          <div id="top_content">
+            <div id="top_content_text">Want to learn more <br> about</div>
+            <div id="popup" data-role="main" class="ui-content">
+              <a href="#popupLogin" data-rel="popup" data-position-to="window" data-transition="pop"><img id="demo_button" src="img/demobutton.svg"></a>
+              <div data-role="popup" id="popupMenu" data-theme="a">
+              <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+              <form>
+                  <div style="padding:10px 20px;">
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname">
+                    <label for="txt-email">Email Address:</label>
+                    <input type="text" name="txt-email" id="txt-email">
+                    <label for="company">Company:</label>
+                    <input type="text" name="company" id="company">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone">
+                    <label for="revenue">Annual Revenue:</label>
+                    <input type="number" name="annual-revenue" id="annual-revenue">
+                    <label for="notes">Additional Notes:</label>
+                    <input type="text" name="additional-notes" id="additional-notes">
+                    <button type="submit" data-theme="b" data-icon="check">Submit</button>
+                  </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+          <div id="manifesto">
+            <div id="bottom_header_text">You might also be interested in...</div>
+
+            <div id="bottom_div">
+              <div id="bottom_image"><img src="img/manifesto.svg"></div>
+              <div id="bottom_div_text">
+                <div id="bottom_text1">We Hold these Truths to <br> be Self Evident:</div>
+                <div id="bottom_text2">Consecstetur adipiscing elit. Sed ut orci ac neque tincidunt gravida non vitae tellus. Nam sem dui, varius.
+                <a style="color:#009DDA">Read more.</a></div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
       <div id="right"><p><!-- right --></p>
